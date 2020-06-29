@@ -1,199 +1,112 @@
 body {
+  background-color: #fff;
+  font-family: 'Lora', serif;
   font-size: 16px;
-  color: black;
-  /*background-color: #61122f;*/
-  font-family: Lucida;
+  color: #000;
+  
 }
 
 /* HEADER */
 #header-nav {
   background-color: #E3E4E2;
   border-radius: 0;
-  border: 10;
+  border: 20;
 }
 
 .navbar-brand {
 	padding-top: 25px;
 }
 
-
 .navbar-brand h1 { /* Restaurant name */
   font-family: 'Lora', serif;
-  color: #557c3e;
-  font-size: 1.5em;
+  color: #1c8986;
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
+  text-align: left;
   margin-top: 0;
   margin-bottom: 0;
   line-height: .75;
-  text-align: left;
-  border: 1px solid black;
 }
 
-.navbar-title h2 { /* Menu title */
+h2 { /* Menu title */
   font-family: 'Lora', serif;
-  text-align: center;
-}
-
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f;
-}
-
-.navbar-header button.navbar-toggle {
-  clear: both;
-  margin-top: -30px;
-}
-
-.navbar-brand a:hover, .navbar-brand a:focus {
-  text-decoration: none;
+  margin-top: 15px;
 }
 
 #nav-list {
   margin-top: 10px;
 }
-
 #nav-list a {
-  color: #951C49;
+  color: black;
   text-align: center;
 }
-
 #nav-list a:hover {
   background: #E7E7E7;
 }
-
 #nav-list a span {
   font-size: 1.8em;
 }
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 2px solid #007E87;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+/*  margin-top: -30px;*/
+}
+
 /* END HEADER */
 
-/* Homepage */
+
+/* HOMEPAGE - Main Contents*/
 #coffee-tile, #tea-tile, #soda-tile {
-/*  height: 250px;
-  width: 100%;
   margin-bottom: 15px;
-  position: relative;
-  border: 2px solid #3F0C1F;*/
-  overflow: hidden;
-  border: 2px solid black;
   background-color: #E3E4E2;
-  margin: 15px;
-  padding: 40px 10px 10px;
-  font-family: Lucida;
+  margin: 20px;
+  padding: 10px;
   color: black;
 }
 
-#coffee-tile span
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 1.6em;
-  text-transform: uppercase;
-  background-color: #000;
-  color: #fff;
-  opacity: .8;
-  
-
-#tea-tile span, #soda-tile span {
-/*  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 1.6em;
-  text-transform: uppercase;
-  background-color: #000;
-  color: #fff;
-  opacity: .8;*/
-  border: 1px solid black;
-  margin-right: 15px;
-  width: 125px;
-  padding: 5px;
-  position:absolute;
-  right: 0;
-  font-size: 125%;
-  text-align: center;
-  color: black;
+#coffee-tile {
+  background-color: #007E87;
 }
 
-/* END HOME PAGE 
+#tea-tile {
+  background-color: #93C4BD;
+}
+
+#soda-tile {
+  background-color: #C7E3DC;
+}
+
+#coffee-tile span, #tea-tile span,  #soda-tile span {
+  background-color: transparent;
+  font-size: 1.3em;
+  font-weight: bolder;
+  text-align: center;
+  color: #000;
+}
+
+/* END HOMEPAGE */
 
 
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-  .container .jumbotron {
-    height: 675px;
-  }
+
 }
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* Header */
-  #logo-img {
-    background: url('../images/restaurant-logo_medium.png') no-repeat;
-    width: 100px;
-    height: 100px;
-    margin: 5px 5px 5px 0;
-  }
-  /* End Header */
 
-  /* Home Page */
-  .container .jumbotron {
-    background: url('../images/jumbotron_992.jpg') no-repeat;
-    height: 558px;
-  }
-  /* End Home Page */
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-  /* Home Page */
-  .container .jumbotron {
-    background: url('../images/jumbotron_768.jpg') no-repeat;
-    height: 432px;
-  }
-  /* End Home Page */
+
 }
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
-  /* Header */
-  .navbar-brand {
-    padding-top: 10px;
-    height: 80px;
-  }
 
-  .navbar-brand h1 { /* Restaurant name */
-    padding-top: 10px;
-    font-size: 5vw; /* 1vw = 1% of viewport width */
-  }
-
-  #collapsable-nav a { /* Collapsed nav menu text */
-    font-size: 1.2em;
-  }
-
-  #collapsable-nav a span { /* Collapsed nav menu glyph */
-    font-size: 1em;
-    margin-right: 5px;
-  }
-
-  #call-btn > a {
-    font-size: 1.5em;
-    display: block;
-    margin: 0 20px;
-    padding: 10px;
-    border: 2px solid #fff;
-    background-color: #f6b319;
-    color: #951c49;
-  }
-
-  #xs-deliver {
-    margin-top: 5px;
-    font-size: .7em;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-  }
-  /* End Header */
+}
 
