@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <title>Module 3 Assignment</title>
+    <title>Module 3 Assignment</title>
     <link rel="stylesheet" href="css/bootstrap.css">    
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -14,60 +14,66 @@
 
   <!-- Header -->
   <header>
-    <nav id="header-nav" class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
+    <nav id="header-nav" class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
+      <div class="navbar-header">
+        <div class="container-fluid">
          <div class="navbar-brand">
             <h1>Food, LLC</h1>
           </div>
-
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+          <button class="navbar-toggler d-block d-sm-none" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
-        </div>
-        <div id="collapsable-nav" class="collapse navbar-collapse">
-            <ul id="nav-list" class="nav navbar-nav navbar-right">
-                <li><a href="#coffee-tile"><br class=".hidden-md-up">Coffee</a></li>
-                <li><a href="#tea-tile"><br class=".hidden-md-up">Tea</a></li>
-                <li><a href="#soda-tile"><br class=".hidden-md-up">Soda</a></li>
-            </ul><!-- #nav-list -->
-        </div><!-- .collapse .navbar-collapse --> 
-      </div><!-- .container -->
+          <div class="navbar-collapse collapse" id="navbarMenu" style="">
+            <ul id="nav-list" class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link text-center" href="#coffee-tile">Coffee<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link text-center" href="#tea-tile">Tea<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link text-center" href="#soda-tile">Soda<span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+          </div>
+        </div><!-- .container-fluid -->
+      </div><!-- .navbar-header -->
     </nav><!-- #header-nav -->
           <div class="text-center">
             <h2>Our Menu</h2>
           </div>
   </header><!-- END Header -->
 
-	<!-- Content -->
+  <!-- Content/Homepage -->
     <div id="menu-tiles" class="row">
-      <div class="col-md-4 col-sm-12 col-xs-12">
+      <div class="col-md-4 col-sm-6 col-xs-12">
         <div id="coffee-tile">
           <div class="text-center"><span>Coffee</span></div>
-          <p>Lorem ipsum dolor sit amet, iisque mnesarchum ex mei. Delicata percipitur voluptatibus pri ex. Ius ad quando vocent fastidii, pertinax recteque sea ad. Est ullum legere ad, eu autem dolorem accusata sea. Cibo nostrud persecuti pri ea, iudico abhorreant ne mea, ea pro iisque periculis mnesarchum.Lorem ipsum dolor sit amet, iisque mnesarchum ex mei. Delicata percipitur voluptatibus pri ex. Ius ad quando vocent fastidii, pertinax recteque sea ad. Est ullum legere ad, eu autem dolorem accusata sea. Cibo nostrud persecuti pri ea, iudico abhorreant ne mea, ea pro iisque periculis mnesarchum.Lorem ipsum dolor sit amet, iisque mnesarchum ex mei. Delicata percipitur voluptatibus pri ex. Ius ad quando vocent fastidii, pertinax recteque sea ad. Est ullum legere ad, eu autem dolorem accusata sea. Cibo nostrud persecuti pri ea, iudico abhorreant ne mea, ea pro iisque periculis mnesarchum.</p>
+          <p>Lorem ipsum dolor sit amet, iisque mnesarchum ex mei. Delicata percipitur voluptatibus pri ex. Ius ad quando vocent fastidii, pertinax recteque sea ad. Est ullum legere ad, eu autem dolorem accusata sea. Cibo nostrud persecuti pri ea, iudico abhorreant ne mea, ea pro iisque periculis mnesarchum. Lorem ipsum dolor sit amet, iisque mnesarchum ex mei. Delicata percipitur voluptatibus pri ex. Ius ad quando vocent fastidii, pertinax recteque sea ad. Est ullum legere ad, eu autem dolorem accusata sea. Cibo nostrud persecuti pri ea, iudico abhorreant ne mea, ea pro iisque periculis mnesarchum. Lorem ipsum dolor sit amet, iisque mnesarchum ex mei. Delicata percipitur voluptatibus pri ex. Ius ad quando vocent fastidii, pertinax recteque sea ad. Est ullum legere ad, eu autem dolorem accusata sea. Cibo nostrud persecuti pri ea, iudico abhorreant ne mea, ea pro iisque periculis mnesarchum. Lorem ipsum dolor sit amet, iisque mnesarchum ex mei. Delicata percipitur voluptatibus pri ex. Ius ad quando vocent fastidii, pertinax recteque sea ad. Est ullum legere ad, eu autem dolorem accusata sea. Cibo nostrud persecuti pri ea, iudico abhorreant ne mea, ea pro iisque periculis mnesarchum. Lorem ipsum dolor sit amet, iisque mnesarchum ex mei. Delicata percipitur voluptatibus pri ex. Ius ad quando vocent fastidii, pertinax recteque sea ad. Est ullum legere ad, eu autem dolorem accusata sea. Cibo nostrud persecuti pri ea, iudico abhorreant ne mea, ea pro iisque periculis mnesarchum. Lorem ipsum dolor sit amet, iisque mnesarchum ex mei. Delicata percipitur voluptatibus pri ex. Ius ad quando vocent fastidii, pertinax recteque sea ad. Est ullum legere ad, eu autem dolorem accusata sea. Cibo nostrud persecuti pri ea, iudico abhorreant ne mea, ea pro iisque periculis mnesarchum.</p>
+          <div class="EndSection d-block d-sm-none"><p>(End of Coffee section) <a href="#top">Back to Top ↑</a></p>
+          </div> 
         </div>
       </div>
-      <div class="col-md-4 col-sm-12 col-xs-12">
-        <div id="tea-tile">
-          <div class="text-center"><span>Tea</span></div>
-            <p>Lorem ipsum dolor sit amet, iisque mnesarchum ex mei. Delicata percipitur voluptatibus pri ex. Ius ad quando vocent fastidii, pertinax recteque sea ad. Est ullum legere ad, eu autem dolorem accusata sea. Cibo nostrud persecuti pri ea, iudico abhorreant ne mea, ea pro iisque periculis mnesarchum.Lorem ipsum dolor sit amet, iisque mnesarchum ex mei. Delicata percipitur voluptatibus pri ex. Ius ad quando vocent fastidii, pertinax recteque sea ad. Est ullum legere ad, eu autem dolorem accusata sea. Cibo nostrud persecuti pri ea, iudico abhorreant ne mea, ea pro iisque periculis mnesarchum.Lorem ipsum dolor sit amet, iisque mnesarchum ex mei. Delicata percipitur voluptatibus pri ex. Ius ad quando vocent fastidii, pertinax recteque sea ad. Est ullum legere ad, eu autem dolorem accusata sea. Cibo nostrud persecuti pri ea, iudico abhorreant ne mea, ea pro iisque periculis mnesarchum.</p>
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <div id="tea-tile">
+        <div class="text-center"><span>Tea</span></div>
+          <p>Lorem ipsum dolor sit amet, iisque mnesarchum ex mei. Delicata percipitur voluptatibus pri ex. Ius ad quando vocent fastidii, pertinax recteque sea ad. Est ullum legere ad, eu autem dolorem accusata sea. Cibo nostrud persecuti pri ea, iudico abhorreant ne mea, ea pro iisque periculis mnesarchum. Lorem ipsum dolor sit amet, iisque mnesarchum ex mei. Delicata percipitur voluptatibus pri ex. Ius ad quando vocent fastidii, pertinax recteque sea ad. Est ullum legere ad, eu autem dolorem accusata sea. Cibo nostrud persecuti pri ea, iudico abhorreant ne mea, ea pro iisque periculis mnesarchum. Lorem ipsum dolor sit amet, iisque mnesarchum ex mei. Delicata percipitur voluptatibus pri ex. Ius ad quando vocent fastidii, pertinax recteque sea ad. Est ullum legere ad, eu autem dolorem accusata sea. Cibo nostrud persecuti pri ea, iudico abhorreant ne mea, ea pro iisque periculis mnesarchum. Lorem ipsum dolor sit amet, iisque mnesarchum ex mei. Delicata percipitur voluptatibus pri ex. Ius ad quando vocent fastidii, pertinax recteque sea ad. Est ullum legere ad, eu autem dolorem accusata sea. Cibo nostrud persecuti pri ea, iudico abhorreant ne mea, ea pro iisque periculis mnesarchum. Lorem ipsum dolor sit amet, iisque mnesarchum ex mei. Delicata percipitur voluptatibus pri ex. Ius ad quando vocent fastidii, pertinax recteque sea ad. Est ullum legere ad, eu autem dolorem accusata sea. Cibo nostrud persecuti pri ea, iudico abhorreant ne mea, ea pro iisque periculis mnesarchum. Lorem ipsum dolor sit amet, iisque mnesarchum ex mei. Delicata percipitur voluptatibus pri ex. Ius ad quando vocent fastidii, pertinax recteque sea ad. Est ullum legere ad, eu autem dolorem accusata sea. Cibo nostrud persecuti pri ea, iudico abhorreant ne mea, ea pro iisque periculis mnesarchum.</p>
+          <div class="EndSection d-block d-sm-none"><p>(End of Tea section) <a href="#top">Back to Top ↑</a></p>
+          </div>
         </div>
       </div>
-      <div class="col-md-4 col-sm-12 col-xs-12">
-        <div id="soda-tile">
-          <div class="text-center"><span>Soda</span></div>
-            <p>Lorem ipsum dolor sit amet, iisque mnesarchum ex mei. Delicata percipitur voluptatibus pri ex. Ius ad quando vocent fastidii, pertinax recteque sea ad. Est ullum legere ad, eu autem dolorem accusata sea. Cibo nostrud persecuti pri ea, iudico abhorreant ne mea, ea pro iisque periculis mnesarchum.Lorem ipsum dolor sit amet, iisque mnesarchum ex mei. Delicata percipitur voluptatibus pri ex. Ius ad quando vocent fastidii, pertinax recteque sea ad. Est ullum legere ad, eu autem dolorem accusata sea. Cibo nostrud persecuti pri ea, iudico abhorreant ne mea, ea pro iisque periculis mnesarchum.Lorem ipsum dolor sit amet, iisque mnesarchum ex mei. Delicata percipitur voluptatibus pri ex. Ius ad quando vocent fastidii, pertinax recteque sea ad. Est ullum legere ad, eu autem dolorem accusata sea. Cibo nostrud persecuti pri ea, iudico abhorreant ne mea, ea pro iisque periculis mnesarchum.</p>
-        </div>
+    <div class="col-md-4 col-sm-12 col-xs-12">
+      <div id="soda-tile">
+        <div class="text-center"><span>Soda</span></div>
+          <p>Lorem ipsum dolor sit amet, iisque mnesarchum ex mei. Delicata percipitur voluptatibus pri ex. Ius ad quando vocent fastidii, pertinax recteque sea ad. Est ullum legere ad, eu autem dolorem accusata sea. Cibo nostrud persecuti pri ea, iudico abhorreant ne mea, ea pro iisque periculis mnesarchum. Lorem ipsum dolor sit amet, iisque mnesarchum ex mei. Delicata percipitur voluptatibus pri ex. Ius ad quando vocent fastidii, pertinax recteque sea ad. Est ullum legere ad, eu autem dolorem accusata sea. Cibo nostrud persecuti pri ea, iudico abhorreant ne mea, ea pro iisque periculis mnesarchum. Lorem ipsum dolor sit amet, iisque mnesarchum ex mei. Delicata percipitur voluptatibus pri ex. Ius ad quando vocent fastidii, pertinax recteque sea ad. Est ullum legere ad, eu autem dolorem accusata sea. Cibo nostrud persecuti pri ea, iudico abhorreant ne mea, ea pro iisque periculis mnesarchum. Lorem ipsum dolor sit amet, iisque mnesarchum ex mei. Delicata percipitur voluptatibus pri ex. Ius ad quando vocent fastidii, pertinax recteque sea ad. Est ullum legere ad, eu autem dolorem accusata sea. Cibo nostrud persecuti pri ea, iudico abhorreant ne mea, ea pro iisque periculis mnesarchum. Lorem ipsum dolor sit amet, iisque mnesarchum ex mei. Delicata percipitur voluptatibus pri ex. Ius ad quando vocent fastidii, pertinax recteque sea ad. Est ullum legere ad, eu autem dolorem accusata sea. Cibo nostrud persecuti pri ea, iudico abhorreant ne mea, ea pro iisque periculis mnesarchum. Lorem ipsum dolor sit amet, iisque mnesarchum ex mei. Delicata percipitur voluptatibus pri ex. Ius ad quando vocent fastidii, pertinax recteque sea ad. Est ullum legere ad, eu autem dolorem accusata sea. Cibo nostrud persecuti pri ea, iudico abhorreant ne mea, ea pro iisque periculis mnesarchum.</p>
+          <div class="EndSection d-block d-sm-none"><p>(End of Soda section) <a href="#top">Back to Top ↑</a></p>
+          </div>
       </div>
     </div>
   </div><!-- END Content -->
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->  
-  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/jquery-3.5.1.min.js"></script><!--  Latest version -->
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
 </body>
-</html>

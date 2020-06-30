@@ -12,18 +12,21 @@ body {
   border-radius: 0;
   border: 20;
 }
+
 .navbar-header{
   width: 100%;
 }
+
 .navbar-brand {
-	padding-top: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .navbar-brand h1 { /* Restaurant name */
   font-family: 'Lora', serif;
   color: #1c8986;
   font-weight: bold;
-  text-shadow: 1px 1px 1px #222;
+  text-shadow: 1.5px 1px 1px #222;
   text-align: left;
   margin-top: 0;
   margin-bottom: 0;
@@ -32,34 +35,17 @@ body {
 
 h2 { /* Menu title */
   font-family: 'Lora', serif;
-  margin-top: 15px;
-}
-
-#nav-list {
-  margin-top: 10px;
-  width: 100%;
-}
-
-#nav-list a {
-  color: black;
-  text-align: center;
+  margin-top: 20px;
+  color: #524f43;
 }
 
 #nav-list a:hover {
-  text-decoration: none;
-  background: #f2b31b;
-  padding-right: 100px;
-  opacity: 0.5;
+  background: #f7f6f2;
 }
 
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 2px solid #a19578;
-}
-
-.navbar-header button.navbar-toggle {
+.navbar-header button.navbar-toggler {
   clear: both;
 }
-
 /* END HEADER */
 
 
@@ -91,28 +77,85 @@ h2 { /* Menu title */
   text-align: center;
   color: #000;
 }
-
 /* END HOMEPAGE */
 
 
 
-/********** Large devices only **********/
+/********** Large devices only (e.g. Desktop) **********/
 @media (min-width: 1200px) {
-
+/*Header*/
+.navbar-header {
+    float: none;
+}
+.navbar-left,.navbar-right {
+    float: none !important;
+}
+.navbar-toggler {
+    display: block;
+}
+.navbar-collapse.collapse {
+    display: none!important;
+}
+.navbar-nav {
+    float: none!important;
+}
+.navbar-nav>li {
+    float: none;
+}
+.collapse.in{
+    display:block !important;
+}
+/*END Header*/
 }
 
-/********** Medium devices only **********/
+/********** Medium devices only (e.g. Tablet) **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-
+/*Header*/
+.navbar-header {
+    float: none;
+}
+.navbar-left,.navbar-right {
+    float: none !important;
+}
+.navbar-toggler {
+    display: block;
+}
+.navbar-collapse.collapse {
+    display: none!important;
+}
+.navbar-nav {
+    float: none!important;
+}
+.navbar-nav>li {
+    float: none;
+}
+.collapse.in{
+    display:block !important;
+}
+/*END Header*/
 }
 
-/********** Small devices only **********/
+/********** Small devices only (e.g. Mobile) **********/
 @media (min-width: 768px) and (max-width: 991px) {
-
+/*Header*/
+.navbar-brand h1 {
+    font-size: 1.8em;
+}
+h2 {
+    font-size: 1.5em;
+}
+/*END Header*/
 }
 
-/********** Extra small devices only **********/
+/********** Extra small devices only (e.g. x-small mobile) **********/
 @media (max-width: 767px) {
-
+/*Header*/
+.navbar-brand h1 {
+    font-size: 1.6em;
+}
+h2 {
+    font-size: 1.5em;
+}
+/*END Header*/
 }
 
