@@ -2,19 +2,22 @@ body {
   background-color: #fff;
   font-family: 'Lora', serif;
   font-size: 16px;
-  color: #000;
-  
+  color: #000; 
 }
 
 /* HEADER */
-#header-nav {
-  background-color: #E3E4E2;
-  border-radius: 0;
-  border: 20;
+.container-fluid{
+  margin: 0;
+  padding: 0;
 }
 
-.navbar-header{
+#navHeader {
+  background-color: #E3E4E2;
+  border-radius: 0;
+}
+.navbar-header {
   width: 100%;
+  background-color: transparent;
 }
 
 .navbar-brand {
@@ -39,18 +42,19 @@ h2 { /* Menu title */
   color: #524f43;
 }
 
-#nav-list a:hover {
-  background: #f7f6f2;
+#navDroplist {
+  border-top: 1.5px solid #454234;
 }
 
-.navbar-header button.navbar-toggler {
-  clear: both;
+#navDroplist a:hover {
+ opacity: 0.75;
 }
 /* END HEADER */
 
 
 /* HOMEPAGE - Main Contents*/
-#coffee-tile, #tea-tile, #soda-tile {
+#coffeeTile, #teaTile, #sodaTile {
+  box-sizing: border-box;
   margin-bottom: 15px;
   background-color: #E3E4E2;
   margin: 20px;
@@ -58,19 +62,19 @@ h2 { /* Menu title */
   color: black;
 }
 
-#coffee-tile {
+#coffeeTile {
   background-color: #007E87;
 }
 
-#tea-tile {
+#teaTile {
   background-color: #93C4BD;
 }
 
-#soda-tile {
+#sodaTile {
   background-color: #C7E3DC;
 }
 
-#coffee-tile span, #tea-tile span,  #soda-tile span {
+#coffeeTile span, #teaTile span,  #sodaTile span {
   background-color: transparent;
   font-size: 1.3em;
   font-weight: bolder;
@@ -80,9 +84,8 @@ h2 { /* Menu title */
 /* END HOMEPAGE */
 
 
-
-/********** Large devices only (e.g. Desktop) **********/
-@media (min-width: 1200px) {
+/*** For any device above SMALL (.col-sm-) ***/
+@media (min-width: 768px) {
 /*Header*/
 .navbar-header {
     float: none;
@@ -108,50 +111,12 @@ h2 { /* Menu title */
 /*END Header*/
 }
 
-/********** Medium devices only (e.g. Tablet) **********/
-@media (min-width: 992px) and (max-width: 1199px) {
-/*Header*/
-.navbar-header {
-    float: none;
-}
-.navbar-left,.navbar-right {
-    float: none !important;
-}
-.navbar-toggler {
-    display: block;
-}
-.navbar-collapse.collapse {
-    display: none!important;
-}
-.navbar-nav {
-    float: none!important;
-}
-.navbar-nav>li {
-    float: none;
-}
-.collapse.in{
-    display:block !important;
-}
-/*END Header*/
-}
 
-/********** Small devices only (e.g. Mobile) **********/
-@media (min-width: 768px) and (max-width: 991px) {
+/*** For any x-SMALL device ***/
+@media (max-width: 575px) {
 /*Header*/
 .navbar-brand h1 {
     font-size: 1.8em;
-}
-h2 {
-    font-size: 1.5em;
-}
-/*END Header*/
-}
-
-/********** Extra small devices only (e.g. x-small mobile) **********/
-@media (max-width: 767px) {
-/*Header*/
-.navbar-brand h1 {
-    font-size: 1.6em;
 }
 h2 {
     font-size: 1.5em;
